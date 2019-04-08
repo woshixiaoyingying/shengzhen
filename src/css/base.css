@@ -1,0 +1,201 @@
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+blockquote,
+big,
+body,
+center,
+canvas,
+caption,
+cite,
+code,
+command,
+datalist,
+dd,
+del,
+details,
+dfn,
+dl,
+div,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+font,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+keygen,
+label,
+legend,
+li,
+meter,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+progress,
+q,
+s,
+samp,
+section,
+small,
+span,
+source,
+strike,
+strong,
+sub,
+sup,
+table,
+tfoot,
+thead,
+u,
+ul,
+var {
+  background: transparent;
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  /* vertical-align: top; */
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+embed {
+  vertical-align: top;
+}
+
+/* Getting the new tags to behave */
+
+article,
+aside,
+audio,
+canvas,
+command,
+datalist,
+details,
+embed,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+keygen,
+meter,
+nav,
+output,
+progress,
+section,
+source,
+video {
+  display: block;
+}
+
+mark,
+rp,
+rt,
+ruby,
+summary,
+time {
+  display: inline;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  /*内容为“.”就是一个英文的句号而已。也可以不写。*/
+  display: block;
+  /*加入的这个元素转换为块级元素。*/
+  clear: both;
+  /*清除左右两边浮动。*/
+  visibility: hidden;
+  /*可见度设为隐藏。注意它和display:none;是有区别的。visibility:hidden;仍然占据空间，只是看不到而已；*/
+  line-height: 0;
+  /*行高为0；*/
+  height: 0;
+  /*高度为0；*/
+  font-size: 0;
+  /*字体大小为0；*/
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+/* 动画定义3D启用硬件加速 */
+
+/* div { */
+
+/* -webkit-transform:translate3d(0, 0, 0); */
+
+/* transform: translate3d(0, 0, 0); */
+
+/* /设置内嵌的元素在 3D 空间如何呈现：保留3D / */
+
+/* -webkit-transform-style: preserve-3d; */
+
+/* / 设置进行转换的元素的背面在面对用户时是否可见：隐藏 / */
+
+/* -webkit-backface-visibility:hidden;
+
+} */
+
+/* 更改消息提示位置 */
+
+.el-message {
+  top: 60px !important;
+}
+
+/* vant返回按钮的颜色 */
+
+.van-icon.van-icon-arrow.van-nav-bar__arrow {
+  color: #8a8a8a;
+}
+
+/* 隐藏滚动条 */
+
+::-webkit-scrollbar {
+  display: none
+}
+
+
+
+
+

@@ -1,0 +1,47 @@
+.tl {
+  text-align: left;
+}
+
+.tc {
+  text-align: center;
+}
+
+.tr {
+  text-align: right;
+}
+
+/* 解决引入了移动端自适应rem.js之后vant的nav样式出错 */
+
+.van-nav-bar .van-icon {
+  color: #ff6633;
+}
+
+.indicator_item {
+  width: 8px;
+  height: 8px;
+  margin-right: 10px;
+  border-radius: 100%;
+  background-color: #fff;
+  transition: all .2s;
+}
+
+.indicator_item.active {
+  background-color: #fff;
+  border-radius: 0%;
+  transform: rotate(50deg);
+}
+
+input {
+  -webkit-appearance: none;
+  appearance: none ;
+  -webkit-appearance: none ;
+  border-radius: 0 ;
+  -webkit-border-radius: 0;
+}
+
+input[type=checkbox] {
+  -webkit-appearance: checkbox;
+}
+input[type=radio] {
+  -webkit-appearance: radio;
+}

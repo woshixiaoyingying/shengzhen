@@ -1,0 +1,33 @@
+{
+  "presets": [
+    ["env", {
+      "modules": false,
+      "targets": {
+        "browsers": ["> 1%", "last 2 versions", "not ie <= 8"]
+      }
+    }],
+    "stage-2"
+  ],
+  "plugins": [
+    ["transform-modules", {
+      "cube-ui": {
+        "transform": "cube-ui/lib/${member}",
+        "kebabCase": true,
+        "style": {
+          "ignore": ["create-api", "better-scroll"]
+        }
+      }
+    },"syntax-dynamic-import"],
+    // ["import", {
+    //   "libraryName": "vant",
+    //   "libraryDirectory": "es",
+    //   "style": true
+    // }]
+  ],
+  "env": {
+    "test": {
+      "presets": ["env", "stage-2"],
+      "plugins": ["istanbul"]
+    }
+  }
+}
